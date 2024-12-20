@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 import fs from 'fs';
 import inquirer from 'inquirer';
-// TODO: Create an array of questions for user input
+// TODO: Create an array of questions for user input.
 const questions = [  
     {
     type: 'input',
@@ -45,32 +45,33 @@ const questions = [
   },
 ];
 
+// The table of contents coding splits the strings into an array. trim whitespaces and makes it a bullet point. joins the array back with a bullet point on a new line.
 function generateReadme(data) {
     return `
-  # ${data.projectName}
+# ${data.projectName}
   
-  ## Description
-  ${data.description}
+## Description
+${data.description}
   
-  ## Table of Contents
-  ${data.tableOfContents.split(',').map(item => `* ${item.trim()}`).join('\n')} 
+## Table of Contents
+${data.tableOfContents.split(',').map(item => `* ${item.trim()}`).join('\n')} 
   
-  ## Installation
-  ${data.installation}
+## Installation
+${data.installation}
   
-  ## Usage
-  ${data.usage}
+## Usage
+${data.usage}
   
-  ## Credits
-  ${data.credits}
+## Credits
+${data.credits}
   
-  ## Tests
-  ${data.tests}
+## Tests
+${data.tests}
   
-  ## License
-  This project is licensed under the ${data.license} license.
-  `;
-  }
+## License
+This project is licensed under ${data.license}.
+`;
+}
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
