@@ -5,7 +5,6 @@ This application generates a ReadMe file by gathering the inputted information i
 
 ## Table Of Contents
 * [Description](#description)
-* [Table of Contents](#table-of-contents)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Features](#features)
