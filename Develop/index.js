@@ -53,7 +53,7 @@ function generateReadme(data) {
   ${data.description}
   
   ## Table of Contents
-  * ${data.tableOfContents}
+  ${data.tableOfContents.split(',').map(item => `* ${item.trim()}`).join('\n')} 
   
   ## Installation
   ${data.installation}
