@@ -1,7 +1,7 @@
 # ReadMe Generator
 
 ## Description
-This application generates a ReadMe file by gathering the inputted information in the command line using Node.js and the inquirer package. This will allow a simple creation of the basic guidelines in a ReadMe file to be created.
+This application generates a ReadMe file by gathering the inputted information in the command line using Node.js and the inquirer package. This will allow a simple creation of the basic guidelines in a ReadMe file to be created. Here's a link to the video file to make it simplier to understand how to properly use the app: https://drive.google.com/file/d/1sXIsPMoEXOSQ92aFZTK7OZCtAaMllw6P/view
 
 ## Table Of Contents
 * [Description](#description)
